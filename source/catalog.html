@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог продукции</title>
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -18,9 +18,9 @@
     <nav class="nav">
       <div class="nav__wrapper">
         <ul class="nav__list">
-          <li class="nav__item"> <a href="index.html">Главная</a> </li>
-          <li class="nav__item"> <a href="#">Каталог Продукции</a> </li>
-          <li class="nav__item"> <a href="form.html">Подбор Программы</a> </li>
+          <li class="nav__item"> <a class="nav__link" href="index.html">Главная</a> </li>
+          <li class="nav__item"> <a class="nav__link" href="#">Каталог Продукции</a> </li>
+          <li class="nav__item"> <a class="nav__link" href="form.html">Подбор Программы</a> </li>
         </ul>
       </div>
     </nav>
@@ -49,7 +49,7 @@
               </li>
             </ul>
           </a>
-          <a class="cat-energy-button" href="form.html">Заказать</a>
+          <a class="products-button" href="form.html">Заказать</a>
         </li>
         <li class="products-list__item products-item">
           <a class="products-item__card-link" href="#">
@@ -71,7 +71,7 @@
               </li>
             </ul>
           </a>
-          <a class="cat-energy-button" href="form.html">Заказать</a>
+          <a class="products-button" href="form.html">Заказать</a>
         </li>
         <li class="products-list__item products-item">
           <a class="products-item__card-link" href="#">
@@ -93,7 +93,7 @@
               </li>
             </ul>
           </a>
-          <a class="cat-energy-button" href="form.html">Заказать</a>
+          <a class="products-button" href="form.html">Заказать</a>
         </li>
         <li class="products-list__item products-item">
           <a class="products-item__card-link" href="#">
@@ -115,7 +115,7 @@
               </li>
             </ul>
           </a>
-          <a class="cat-energy-button" href="form.html">Заказать</a>
+          <a class="products-button" href="form.html">Заказать</a>
         </li>
         <li class="products-list__item products-item">
           <a class="products-item__card-link" href="#">
@@ -137,7 +137,7 @@
               </li>
             </ul>
           </a>
-          <a class="cat-energy-button" href="form.html">Заказать</a>
+          <a class="products-button" href="form.html">Заказать</a>
         </li>
         <li class="products-list__item products-item">
           <a class="products-item__card-link" href="#">
@@ -159,7 +159,7 @@
               </li>
             </ul>
           </a>
-          <a class="cat-energy-button" href="form.html">Заказать</a>
+          <a class="products-button" href="form.html">Заказать</a>
         </li>
         <li class="products-list__item products-item">
           <a class="products-item__card-link" href="#">
@@ -181,14 +181,14 @@
               </li>
             </ul>
           </a>
-          <a class="cat-energy-button" href="form.html">Заказать</a>
+          <a class="products-button" href="form.html">Заказать</a>
         </li>
       </ul>
       <div class="all-products-container">
         <img class="all-products-container__icon" width="30" height="30" src="img/catalog/plus.svg" alt="Иконка плюса">
         <h2 class="all-products-container__title">Показать еще 100500 товаров</h2>
         <p class="all-products-container__content">На самом деле вкусов гораздо больше!</p>
-        <a class="cat-energy-button cat-energy-button--grey" href="#">Показать все</a>
+        <a class="products-button products-button--grey" href="#">Показать все</a>
       </div>
     </section>
     <section class="add-products">
@@ -204,7 +204,7 @@
               </li>
             </ul>
           </a>
-          <a class="cat-energy-button" href="form.html">Заказать</a>
+          <a class="products-button" href="form.html">Заказать</a>
         </li>
         <li class="add-products-list__item add-products-item">
           <a class="add-products-item__link" href="#">
@@ -216,7 +216,7 @@
               </li>
             </ul>
           </a>
-          <a class="cat-energy-button" href="form.html">Заказать</a>
+          <a class="products-button" href="form.html">Заказать</a>
         </li>
         <li class="add-products-list__item add-products-item">
           <a class="add-products-item__link" href="#">
@@ -228,7 +228,7 @@
               </li>
             </ul>
           </a>
-          <a class="cat-energy-button" href="form.html">Заказать</a>
+          <a class="products-button" href="form.html">Заказать</a>
         </li>
         <li class="add-products-list__item add-products-item">
           <a class="add-products-item__link" href="#">
@@ -240,7 +240,7 @@
               </li>
             </ul>
           </a>
-          <a class="cat-energy-button" href="form.html">Заказать</a>
+          <a class="products-button" href="form.html">Заказать</a>
         </li>
       </ul>
       <div class="gift-container">
@@ -251,7 +251,7 @@
       </div>
     </section>
     <section class="adress">
-      <div class="adress-container adress-container--background-grey">
+      <div class="adress__container adress-container adress-container--background-grey">
         <h2 class="adress-container__title">приглашаем к сотрудничеству дилеров!</h2>
         <p class="adress-container__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
@@ -260,9 +260,10 @@
     </section>
   </main>
   <footer class="footer">
+    <div class="footer__wrapper">
     <h2 class="visually-hidden">Социальные сети</h2>
-    <a class="footer__logo-link" href="index.html"><img src="img/index/header/logo-mobile-link.svg" width="128"
-        height="24" alt="Текстовое лого Кэт Энерджи"> </a>
+    <a class="footer__logo-link" href="#"><img src="img/index/header/logo-mobile-link.svg" width="128" height="24"
+        alt="Текстовое лого Кэт Энерджи"> </a>
     <ul class="social-list">
       <li class="social-list__item">
         <a class="social-list__link" href="#"><img src="img/index/footer/vkontakte-social.svg" width="28" height="22"
@@ -280,6 +281,7 @@
     <a class="logo-link-html" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="logo-link-html__title">HTML Academy</span> <img src="img/index/footer/html-logo.svg"
         alt="Ссылка академии"></a>
+    </div>
   </footer>
 </body>
 

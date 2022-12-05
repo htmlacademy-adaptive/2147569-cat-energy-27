@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Форма заказа</title>
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -19,9 +19,9 @@
     <nav class="nav">
       <div class="nav__wrapper">
         <ul class="nav__list">
-          <li class="nav__item"> <a href="index.html">Главная</a> </li>
-          <li class="nav__item"> <a href="catalog.html">Каталог Продукции</a> </li>
-          <li class="nav__item"> <a href="#">Подбор Программы</a> </li>
+          <li class="nav__item"> <a class="nav__link" href="index.html">Главная</a> </li>
+          <li class="nav__item"> <a class="nav__link" href="catalog.html">Каталог Продукции</a> </li>
+          <li class="nav__item"> <a class="nav__link" href="#">Подбор Программы</a> </li>
         </ul>
       </div>
     </nav>
@@ -132,12 +132,12 @@
             </li>
           </ul>
         </fieldset>
-        <button class="cat-energy-button" type="submit">Отправить заявку</button>
+        <button class="form-button" type="submit">Отправить заявку</button>
         <span class="form__symbol-required">* — Обязательные поля</span>
       </form>
     </div>
     <section class="adress">
-      <div class="adress-container adress-container--background-grey">
+      <div class="adress__container adress-container adress-container--background-grey">
         <h2 class="adress-container__title">приглашаем к сотрудничеству дилеров!</h2>
         <p class="adress-container__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
@@ -146,9 +146,10 @@
     </section>
   </main>
   <footer class="footer">
+    <div class="footer__wrapper">
     <h2 class="visually-hidden">Социальные сети</h2>
-    <a class="footer__logo-link" href="index.html"><img src="img/index/header/logo-mobile-link.svg" width="128"
-        height="24" alt="Текстовое лого Кэт Энерджи"> </a>
+    <a class="footer__logo-link" href="#"><img src="img/index/header/logo-mobile-link.svg" width="128" height="24"
+        alt="Текстовое лого Кэт Энерджи"> </a>
     <ul class="social-list">
       <li class="social-list__item">
         <a class="social-list__link" href="#"><img src="img/index/footer/vkontakte-social.svg" width="28" height="22"
@@ -166,6 +167,7 @@
     <a class="logo-link-html" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="logo-link-html__title">HTML Academy</span> <img src="img/index/footer/html-logo.svg"
         alt="Ссылка академии"></a>
+    </div>
   </footer>
 </body>
 

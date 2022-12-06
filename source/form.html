@@ -50,7 +50,7 @@
             <li class="form__item">
               <label class="form__label">
                 <span class="form__title-input">Возраст (лет):</span>
-                <input class="form__input form__input--size-173" type="text" placeholder="7" name="age-cat">
+                <input class="form__input" type="text" placeholder="7" name="age-cat">
               </label>
             </li>
           </ul>
@@ -60,20 +60,20 @@
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">
-                <input class="form__input" type="checkbox" name="weight-loss" checked>
-                <span class="form__title-input">Похудение</span>
+                <input class="form__input-checkbox" type="checkbox" name="weight-loss" checked>
+                <span class="form__title-input form__title-input--color-special-grey">Похудение</span>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
-                <input class="form__input" type="checkbox" name="weight-gain">
-                <span class="form__title-input">Набор массы</span>
+                <input class="form__input-checkbox" type="checkbox" name="weight-gain">
+                <span class="form__title-input form__title-input--color-special-grey">Набор массы</span>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
-                <input class="form__input" type="checkbox" name="need-advice">
-                <span class="form__title-input">Не знаю (Нужен ваш совет)</span>
+                <input class="form__input-checkbox" type="checkbox" name="need-advice">
+                <span class="form__title-input form__title-input--color-special-grey">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
@@ -98,46 +98,44 @@
           </ul>
         </fieldset>
         <fieldset class="form__filter-group">
-          <legend class="form__group-title">Комментарий</legend>
-          <label class="form__label">
-            <input class="form__input" type="text" placeholder="Расскажите обо всех повадках кота" name="comment">
-          </label>
+         <legend class="form__group-title">Комментарий</legend>
+          <textarea class="form__input form__input--size-280-151" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
         </fieldset>
         <fieldset class="form__filter-group">
           <legend class="form__group-title">Дополнительно</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">
-                <input class="form__input" type="checkbox" name="sweetener" checked>
-                <span class="form__title-input">Сахарозаменитель</span>
+                <input class="form__input-checkbox" type="checkbox" name="sweetener" checked>
+                <span class="form__title-input form__title-input--color-black">Сахарозаменитель</span>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
-                <input class="form__input" type="checkbox" name="drinking-water">
-                <span class="form__title-input">Питьевая вода</span>
+                <input class="form__input-checkbox" type="checkbox" name="drinking-water">
+                <span class="form__title-input form__title-input--color-black">Питьевая вода</span>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
-                <input class="form__input" type="checkbox" name="milk">
-                <span class="form__title-input">Молоко</span>
+                <input class="form__input-checkbox" type="checkbox" name="milk">
+                <span class="form__title-input form__title-input--color-black">Молоко</span>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
-                <input class="form__input" type="checkbox" name="vitamins">
-                <span class="form__title-input">Витамины</span>
+                <input class="form__input-checkbox" type="checkbox" name="vitamins">
+                <span class="form__title-input form__title-input--color-black">Витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <button class="form-button" type="submit">Отправить заявку</button>
-        <span class="form__symbol-required">* — Обязательные поля</span>
+        <p class="form__symbol-required">* — Обязательные поля</p>
       </form>
     </div>
-    <section class="adress">
-      <div class="adress__container adress-container adress-container--background-grey">
+    <section class="adress adress--background-grey">
+      <div class="adress__container adress-container">
         <h2 class="adress-container__title">приглашаем к сотрудничеству дилеров!</h2>
         <p class="adress-container__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>

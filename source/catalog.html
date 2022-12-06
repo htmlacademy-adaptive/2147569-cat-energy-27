@@ -27,6 +27,7 @@
   </header>
   <main class="catalog">
     <section class="catalog-products">
+      <div class="catalog-products__wrapper">
       <h1 class="catalog-products__title">Каталог продукции</h1>
       <ul class="products-list">
         <li class="products-list__item products-item">
@@ -185,13 +186,17 @@
         </li>
       </ul>
       <div class="all-products-container">
+       <div class="all-products-container__wrapper">
         <img class="all-products-container__icon" width="30" height="30" src="img/catalog/plus.svg" alt="Иконка плюса">
         <h2 class="all-products-container__title">Показать еще 100500 товаров</h2>
         <p class="all-products-container__content">На самом деле вкусов гораздо больше!</p>
-        <a class="products-button products-button--grey" href="#">Показать все</a>
+        <a class="products-button products-button--grey-color-black" href="#">Показать все</a>
+       </div>
       </div>
+    </div>
     </section>
     <section class="add-products">
+     <div class="add-products__wrapper">
       <h2 class="add-products__title">Дополнительные товары</h2>
       <ul class="add-products-list">
         <li class="add-products-list__item add-products-item">
@@ -244,14 +249,14 @@
         </li>
       </ul>
       <div class="gift-container">
-        <img class="gift-container__background-image" width="280" height="290" src="img/catalog/cat-gift.jpg"
-          alt="Фото кота">
+        <div class="gift-container__wrapper-decoration"><span class="visually-hidden">Фоновая маска</span> </div>
         <img class="gift-container__icon" width="78" height="80" src="img/catalog/icon-gift.svg" alt="Иконка подарка">
-        <p class="gift-container__content">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="gift-container__content">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
       </div>
+     </div>
     </section>
-    <section class="adress">
-      <div class="adress__container adress-container adress-container--background-grey">
+    <section class="adress adress--background-grey">
+      <div class="adress__container adress-container">
         <h2 class="adress-container__title">приглашаем к сотрудничеству дилеров!</h2>
         <p class="adress-container__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>

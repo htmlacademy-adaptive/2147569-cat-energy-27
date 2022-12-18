@@ -2,9 +2,21 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example-advantage-list__item {
   border: 1px solid #cdcdcd;
   width: 124px;
+}
+
+@media (min-width: @tablet-width) {
+  .example-advantage-list__item {
+    width: 162px;
+  }
+
+  .example-advantage-list {
+    justify-content: flex-start;
+  }
 }

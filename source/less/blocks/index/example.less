@@ -26,3 +26,28 @@
   text-align: center;
   color: #000000;
 }
+
+@media (max-width: @mobile-width) {
+  .example__description--transfer-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__description--transfer-tablet {
+    display: none;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .example__description--transfer-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example__wrapper {
+    width: 709px;
+  }
+}
+

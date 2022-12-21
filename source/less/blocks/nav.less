@@ -16,6 +16,12 @@
   color: #000000;
 }
 
+@media (max-width: @mobile-width) {
+  .nav--none {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .nav__list {
     flex-direction: row;
@@ -38,8 +44,13 @@
 
   .nav__link {
     font-weight: 400;
+    font-size: 20px;
     line-height: 30px;
     color: #ffffff;
+  }
+
+  .nav__link--desktop-color {
+    color: #111111;
   }
 }
 

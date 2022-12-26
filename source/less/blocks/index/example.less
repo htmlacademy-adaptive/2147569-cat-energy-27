@@ -1,10 +1,12 @@
 .example {
   background-color: #eaeaea;
+  position: relative;
 }
 
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
+  position: relative;
 }
 
 .example__title {
@@ -16,7 +18,7 @@
   color: #000000;
 }
 
-.example__total-price {
+.example__total-price-key {
   font-family: @oswald_font;
   font-style: normal;
   font-weight: 400;
@@ -25,4 +27,129 @@
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.example__total-price-value {
+  font-family: @oswald_font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: @base_font-size;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  display: inline-block;
+}
+
+@media (max-width: @mobile-width) {
+  .example__description--transfer-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example__wrapper {
+    width: 709px;
+  }
+
+  .example {
+    height: 462px;
+  }
+
+  .example__title {
+    position: absolute;
+    top: -600px;
+    left: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    position: absolute;
+    top: -500px;
+    left: 0;
+  }
+
+  .example-advantage-list {
+    position: absolute;
+    top: -400px;
+    left: 0;
+  }
+
+  .example__total-price-key {
+    position: absolute;
+    top: -390px;
+    right: 0;
+    text-align: right;
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__total-price-value {
+    position: absolute;
+    top: -370px;
+    right: 0;
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example--tablet-desktop-margin {
+    margin-top: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    width: 1224px;
+  }
+
+  .example__description--transfer-tablet {
+    display: none;
+  }
+
+  .example--tablet-desktop-margin {
+    margin-top: 205px;
+  }
+
+  .example__title {
+    position: absolute;
+    top: -135px;
+    left: 0;
+  }
+
+  .example__description {
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+
+  .example-advantage-list {
+    position: absolute;
+    top: 160px;
+    left: 0;
+  }
+
+  .example__total-price-key {
+    position: absolute;
+    top: 295px;
+    right: 1053px;
+    margin-left: 0;
+  }
+
+  .example__total-price-value {
+    position: absolute;
+    top: 295px;
+    right: 930px;
+  }
+}
+
+
+@media (max-width: @desktop-width) {
+  .example__description--transfer-desktop {
+    display: none;
+  }
 }

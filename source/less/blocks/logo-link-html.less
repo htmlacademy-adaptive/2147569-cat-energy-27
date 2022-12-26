@@ -1,9 +1,21 @@
 .logo-link-html {
   text-decoration: none;
   color: @base_color;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-link-html__title {
   font-size: 16px;
   line-height: 20px;
+}
+
+.logo-link-html--size-280 {
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .logo-link-html--size-280 {
+    width: 163px;
+  }
 }

@@ -1,8 +1,31 @@
+.adress {
+  position: relative;
+}
+
 .adress__container {
   width: 280px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .adress--background-grey {
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .adress__container {
+    width: 709px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .adress__container {
+    width: 565px;
+    position: absolute;
+    background-color: #ffffff;
+    justify-content: space-around;
+    top: 93px;
+    left: 96px;
+  }
 }

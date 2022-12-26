@@ -1,5 +1,8 @@
 .nav__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav__link {
@@ -11,4 +14,42 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (max-width: @mobile-width) {
+  .nav--none {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .nav__list {
+    flex-direction: row;
+    width: 440px;
+    justify-content: space-between;
+  }
+
+  .nav__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav__list {
+    flex-direction: row;
+    width: 478px;
+  }
+
+  .nav__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  .nav__link--desktop-color {
+    color: #111111;
+  }
 }

@@ -1,5 +1,5 @@
 .background-image-cat-container {
-  background-image: url("/img/index/main/cat.jpg");
+  background-image: url("../img/index/main/cat.jpg");
   width: 320px;
   height: 302px;
   background-repeat: no-repeat;
@@ -12,4 +12,29 @@
   width: 320px;
   height: 302px;
   background-color: rgba(104, 183, 56, 0.8);
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .background-image-cat-container {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .background-image-cat-container--desktop {
+    width: 720px;
+    height: 694px;
+    background-position-x: -71px;
+    background-position-y: 36px;
+    position: absolute;
+    top: -108px;
+    right: 0;
+    z-index: -1;
+    background-size: 154%;
+  }
+
+  .background-image-cat-container__wrapper-decoration--desktop {
+    width: 720px;
+    height: 694px;
+  }
 }

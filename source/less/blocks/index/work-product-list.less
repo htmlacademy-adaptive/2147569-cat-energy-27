@@ -7,12 +7,20 @@
   justify-content: space-between;
 }
 
+.work-product-list__item {
+  margin-bottom: 20px;
+}
+
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .work-product-list {
     display: grid;
     grid-template-columns: 243px 243px;
     column-gap: 145px;
     row-gap: 37px;
+  }
+
+  .work-product-list__item--margin-tablet {
+    margin-bottom: 180px;
   }
 }
 

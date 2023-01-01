@@ -1,8 +1,8 @@
 .nav__list {
+  position: relative;
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .nav__link {
@@ -17,8 +17,96 @@
 }
 
 @media (max-width: @mobile-width) {
-  .nav--none {
+  .nav__list {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav--position-mobile {
+    position: absolute;
+    top: 58px;
+    z-index: 2;
+    background-color: #ffffff;
+    width: 320px;
+  }
+
+  .nav__toggle {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    top: -39px;
+    right: 20px;
+  }
+
+  .nav--closed .nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+
+  .nav--opened .nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: -1px;
+      width: 25px;
+      height: 2px;
+      background-color: #000000;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .nav--nojs {
+    position: static;
+  }
+
+  .nav--closed .nav__list {
     display: none;
+  }
+
+  .nav--nojs .nav__toggle {
+    display: none;
+  }
+
+  .nav__link {
+    padding: 13px 70px 19px;
+  }
+
+  .nav__link--home-mobile {
+    padding: 12px 121px 20px;
+  }
+
+  .nav__item {
+    padding: 20px 0 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      border: #e6e6e6 solid 1px;
+      top: 0;
+      left: 0;
+      box-shadow: 0 66px 0 0 #e6e6e6, 0 132px 0 0 #e6e6e6;
+    }
   }
 }
 
@@ -33,6 +121,24 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__link--current::after {
+    content: "";
+    width: 64px;
+    height: 2px;
+    background-color: #68b738;
+    position: absolute;
+    bottom: -10px;
+    left: 1px;
+  }
+
+  .nav__item {
+    position: relative;
   }
 }
 
@@ -51,5 +157,11 @@
 
   .nav__link--desktop-color {
     color: #111111;
+  }
+
+  .nav__link--current::after {
+    background-color: #ffffff;
+    width: 71px;
+    left: 2px;
   }
 }

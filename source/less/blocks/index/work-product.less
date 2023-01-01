@@ -10,12 +10,15 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 @media (min-width: @tablet-width) {
-  .work-product {
+  .work-product--tablet-width {
     width: 709px;
     margin: 0 auto;
+    position: relative;
   }
 
   .work-product__wrapper {
@@ -26,6 +29,21 @@
   .work-product__header {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 183px;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: 1199px) {
+  .work-product--decoration-after {
+    &::after {
+      content: "";
+      width: 768px;
+      background-color: #e6e6e6;
+      height: 1px;
+      position: absolute;
+      bottom: -85px;
+      left: -30px;
+    }
   }
 }
 
@@ -38,5 +56,9 @@
   .work-product__wrapper {
     width: 1224px;
     margin: 0;
+  }
+
+  .work-product__header {
+    margin-top: 71px;
   }
 }

@@ -6,11 +6,30 @@
 
 .advantages-list__item {
   background-color: #f2f2f2;
+  padding: 10px 33px 18px 20px;
+  margin-bottom: 20px;
+  position: relative;
 }
+
+@media (max-width: @mobile-width) {
+  .advantages-list__item {
+    &::after {
+      content: "";
+      width: 240px;
+      height: 1px;
+      background-color: #d9d9d9;
+      position: absolute;
+      bottom: 55px;
+      left: 21px;
+    }
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .advantages-list__item {
-    width: 709px;
+    padding: 77px 62px 53px 52px;
+    margin-bottom: 30px;
   }
 }
 
@@ -21,6 +40,7 @@
   }
 
   .advantages-list__item {
-    width: 570px;
+    padding: 77px 65px 55px 55px;
+    margin-bottom: 0;
   }
 }

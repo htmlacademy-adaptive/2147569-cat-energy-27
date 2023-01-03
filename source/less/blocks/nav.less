@@ -103,7 +103,7 @@
       position: absolute;
       width: 320px;
       border: #e6e6e6 solid 1px;
-      top: 0;
+      top: -1px;
       left: 0;
       box-shadow: 0 66px 0 0 #e6e6e6, 0 132px 0 0 #e6e6e6;
     }
@@ -137,6 +137,16 @@
     left: 1px;
   }
 
+  .nav__link--form-current::after {
+    content: "";
+    width: 152px;
+    height: 2px;
+    background-color: #68b738;
+    position: absolute;
+    bottom: -10px;
+    left: 1px;
+  }
+
   .nav__item {
     position: relative;
   }
@@ -162,6 +172,11 @@
   .nav__link--current::after {
     background-color: #ffffff;
     width: 71px;
+    left: 2px;
+  }
+
+  .nav__link--form-current::after {
+    width: 168px;
     left: 2px;
   }
 }

@@ -6,6 +6,12 @@
   flex-direction: column;
 }
 
+@media (max-width: @mobile-width) {
+  .products-list__item:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .products-list {
     display: grid;

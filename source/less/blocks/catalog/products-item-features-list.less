@@ -13,13 +13,35 @@
 
 @media (min-width: @tablet-width) {
   .products-item-features-list__item {
-    width: 250px;
+    width: 248px;
     height: 35px;
+  }
+
+  .products-item-features-list--decoration {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      border: #cdcdcd solid 1px;
+      top: 26px;
+      left: -2px;
+      box-shadow: 0 35px 0 0 #cdcdcd, 0 69px 0 0 #cdcdcd;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .products-item-features-list__item {
-    width: 180px;
+    width: 167px;
+  }
+
+  .products-item-features-list--decoration {
+    &::after {
+      width: 169px;
+      border: #cdcdcd solid 1px;
+      top: 25px;
+      left: -2px;
+      box-shadow: 0 35px 0 0 #cdcdcd, 0 69px 0 0 #cdcdcd;
+    }
   }
 }

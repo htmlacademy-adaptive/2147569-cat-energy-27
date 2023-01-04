@@ -10,18 +10,21 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: @tablet-width) {
   .add-products-item__title {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 25px;
   }
 
   .add-products-item__link {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 632px;
   }
 }
@@ -29,5 +32,10 @@
 @media (min-width: @desktop-width) {
   .add-products-item__link {
     width: 610px;
+    align-items: center;
+  }
+
+  .add-products-item__title {
+    margin-bottom: 0;
   }
 }

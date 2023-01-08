@@ -1,18 +1,39 @@
-.header__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+
+
+@media (max-width: @mobile-width) {
+  .header {
+    position: relative;
+  }
+
+  .header__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .header__logo-link {
+    width: 192px;
+    height: 38px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/index/header/logo-mobile.svg");
+      width: 34px;
+      height: 38px;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
-.header__logo-link {
-  width: 192px;
-  height: 34px;
-  position: relative;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
 
 @media (min-width: @tablet-width) {
   .header {
@@ -20,15 +41,57 @@
     justify-content: space-between;
     width: 709px;
     margin: 0 auto;
+    padding-top: 0;
   }
 
-  .header__toggle {
+  .header__logo-text {
     display: none;
+  }
+
+  .header__logo-link {
+    position: relative;
+    width: 174px;
+    height: 52px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/index/header/logo-tablet.svg");
+      width: 174px;
+      height: 52px;
+      top: 0;
+      left: 0;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .header {
     width: 1224px;
+    padding-top: 53px;
+  }
+
+  .header__logo-link {
+    position: relative;
+    width: 202px;
+    height: 59px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/index/header/logo-desktop.svg");
+      width: 202px;
+      height: 59px;
+      top: 0;
+      left: 0;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

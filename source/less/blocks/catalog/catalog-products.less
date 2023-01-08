@@ -10,6 +10,24 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin-top: 27px;
+  margin-bottom: 49px;
+}
+
+@media (max-width: @mobile-width) {
+  .catalog-products--decoration {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      border: #d9d9d9 solid 1px;
+      top: -28px;
+      left: -1px;
+      box-shadow: 0 104px 0 0 #ebebeb, 0 313px 0 0 #ebebeb, 0 527px 0 0 #ebebeb, 0 740px 0 0 #ebebeb, 0 953px 0 0 #ebebeb, 0 1167px 0 0 #ebebeb, 0 1381px 0 0 #ebebeb, 0 1598px 0 0 #ebebeb, 0 1822px 0 0 #ebebeb;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -20,11 +38,18 @@
   .catalog-products__title {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 64px;
+    margin-bottom: 163px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-products__wrapper {
     width: 1224px;
+  }
+
+  .catalog-products__title {
+    margin-top: 74px;
+    margin-bottom: 165px;
   }
 }

@@ -1,6 +1,5 @@
 .social-list {
   list-style: none;
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -9,4 +8,11 @@
 
 .social-list--size-132 {
   width: 132px;
+}
+
+@media (max-width: @mobile-width) {
+  .social-list--margin-mobile {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
 }

@@ -6,11 +6,14 @@
   position: relative;
 }
 
+.gift-container--margin {
+  margin-top: 54px;
+}
+
 .gift-container__wrapper-decoration {
   width: 280px;
   height: 290px;
   background-color: rgba(104, 183, 56, 0.8);
-  margin-top: 30px;
 }
 
 .gift-container__icon {
@@ -29,7 +32,7 @@
   right: 55px;
 }
 
-@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+@media (min-width: @tablet-width) and (max-width: 1199px) {
   .gift-container {
     background-image: url("../img/catalog/cat-gift-tablet.jpg");
     width: 709px;
@@ -52,6 +55,10 @@
     top: 50px;
     right: 130px;
   }
+
+  .gift-container--margin {
+    margin-top: 69px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -62,14 +69,15 @@
   .gift-container__wrapper-decoration {
     width: 245px;
     position: absolute;
-    top: -30px;
+    top: -1px;
     right: 0;
   }
 
   .gift-container--desktop-position {
     position: absolute;
-    top: 6px;
-    right: -3px;
+    top: 117px;
+    right: 0;
+    margin-top: 0;
   }
 
   .gift-container__icon {

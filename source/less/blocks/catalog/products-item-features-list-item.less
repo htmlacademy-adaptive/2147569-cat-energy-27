@@ -19,9 +19,21 @@
 @media (min-width: @tablet-width) {
   .products-item-features-list-item__key {
     font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 14px;
   }
 
   .products-item-features-list-item__value {
     font-size: 16px;
+  }
+
+  .products-item-features-list-item {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products-item-features-list-item__key {
+    margin: 0;
   }
 }

@@ -3,7 +3,19 @@
 }
 
 .all-products-container--margin {
-  margin-top: 40px;
+  margin-top: 89px;
+}
+
+.all-products-container--decoration-plus {
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url("../img/catalog/plus.svg");
+    top: -56px;
+    right: 126px;
+  }
 }
 
 .all-products-container__title {
@@ -15,6 +27,8 @@
   text-transform: uppercase;
   text-align: center;
   color: #111111;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .all-products-container__content {
@@ -22,6 +36,8 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
+  margin-top: 0;
+  margin-bottom: 21px;
 }
 
 @media (max-width: @mobile-width) {
@@ -39,30 +55,64 @@
     font-size: 20px;
     line-height: 22px;
     position: absolute;
-    top: -245px;
-    left: 60px;
+    top: -234px;
+    left: 99px;
+    margin-bottom: 23px;
+    margin-top: 49px;
+  }
+
+  .all-products-container--decoration-plus {
+    &::before {
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/catalog/plus-tablet.svg");
+      top: -293px;
+      right: 128px;
+    }
+  }
+
+  .all-products-container--decoration-box {
+    &::after {
+      content: "";
+      width: 324px;
+      height: 429px;
+      border: 1px solid #f2f2f2;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
 
   .all-products-container__content {
     font-size: 16px;
     line-height: 18px;
     position: absolute;
-    top: -160px;
-    left: 45px;
+    top: -123px;
+    left: 85px;
+    margin-bottom: 87px;
   }
 
   .all-products-container--margin {
-    margin-top: 360px;
-    margin-left: 40px;
+    margin-top: 351px;
+    padding: 0 37px 38px 38px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .all-products-container__title {
-    left: 20px;
+    left: 60px;
   }
 
   .all-products-container__content {
-    left: 5px;
+    left: 45px;
+  }
+
+  .all-products-container--decoration-box::after {
+    width: 245px;
+  }
+
+  .all-products-container--decoration-plus::before {
+    right: 91px;
   }
 }

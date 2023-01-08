@@ -6,20 +6,25 @@
   <title>Магазин Кэт Энерджи</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="img/favicons/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-152.png" sizes="152x152">
 </head>
 
 <body class="page__body">
   <header class="header">
     <h2 class="visually-hidden">Магазин специального питания для котов Кэт Энерджи</h2>
     <div class="header__wrapper">
-      <a class="header__logo-link" href="#"> <img class="header__logo-text" src="img/index/header/logo-mobile-link.svg" width="101" height="18"
-          alt="Текстовое лого Кэт Энерджи"> </a>
+      <a class="header__logo-link" href="#"> <img class="header__logo-text" src="img/index/header/logo-mobile-link.svg"
+          width="101" height="18" alt="Текстовое лого Кэт Энерджи"> </a>
     </div>
     <nav class="nav nav--opened nav--nojs">
       <div class="nav__container">
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Кнопка открытия/закрытия меню</span></button>
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Кнопка открытия/закрытия
+            меню</span></button>
         <ul class="nav__list">
-          <li class="nav__item nav__item--home-mobile-decoration"> <a class="nav__link nav__link--home-mobile nav__link--current" href="#">Главная</a> </li>
+          <li class="nav__item nav__item--home-mobile-decoration"> <a
+              class="nav__link nav__link--home-mobile nav__link--current" href="#">Главная</a> </li>
           <li class="nav__item"> <a class="nav__link" href="catalog.html">Каталог Продукции</a> </li>
           <li class="nav__item"> <a class="nav__link" href="form.html">Подбор Программы</a> </li>
         </ul>
@@ -27,18 +32,26 @@
     </nav>
   </header>
   <main class="page__main main">
-    <div class="background-image-cat-container background-image-cat-container--desktop"><span class="visually-hidden">Фоновое фото кота</span>
-      <div class="background-image-cat-container__wrapper-decoration background-image-cat-container__wrapper-decoration--desktop"><span class="visually-hidden">Фоновая маска</span>
+    <div class="background-image-cat-container background-image-cat-container--desktop"><span
+        class="visually-hidden">Фоновое фото кота</span>
+      <div
+        class="background-image-cat-container__wrapper-decoration background-image-cat-container__wrapper-decoration--desktop">
+        <span class="visually-hidden">Фоновая маска</span>
       </div>
     </div>
     <section class="promo">
       <div class="promo__wrapper">
         <h1 class="promo__header">Функциональное <br> питание для котов</h1>
         <p class="promo__description">Занялся собой? Займись котом!</p>
-        <img class="promo__image" width="280" height="270" src="img/index/main/image-promo.png"
-          alt="Промо картинка продукта"> <img class="promo__image--tablet" width="709" height="609" src="img\index\main\image-promo-tablet.png"
-          alt="Промо картинка продукта"> <img class="promo__image--desktop" width="552" height="499" src="img\index\main\image-promo-desktop.png"
-          alt="Промо картинка продукта">
+        <picture>
+          <source media="(min-width:1200px)" width="552" height="499"
+            srcset="img/index/main/image-promo-desktop@1x.png 1x, img/index/main/image-promo-desktop@2x.png 2x">
+          <source media="(min-width:768px)" width="709" height="609"
+            srcset="img/index/main/image-promo-tablet@1x.jpg 1x, img/index/main/image-promo-tablet@2x.jpg 2x">
+          <img class="promo__image" width="280" height="270" src="img/index/main/image-promo@1x.png"
+            srcset="img/index/main/image-promo@1x.png 1x, img/index/main/image-promo@2x.png 2x"
+            alt="Промо картинка продукта">
+        </picture>
         <a class="promo-button promo-button--tablet-desktop" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -47,16 +60,24 @@
         <ul class="advantages-list">
           <li class="advantages-list__item advantages-item">
             <h2 class="advantages-item__header">Похудение</h2>
-            <p class="advantages-item__description"> Ваш кот весит больше собаки и почти <br class="advantages-item__description--tablet-transfer"> утратил способность <br class="advantages-item__description--desktop-transfer"> лазить по
-              деревьям? <br class="advantages-item__description--tablet-transfer"> Пора на диету! Cat Energy Slim поможет <br class="advantages-item__description--desktop-transfer"> <br class="advantages-item__description--tablet-transfer"> вашему питомцу сбросить лишний вес.
+            <p class="advantages-item__description"> Ваш кот весит больше собаки и почти <br
+                class="advantages-item__description--tablet-transfer"> утратил способность <br
+                class="advantages-item__description--desktop-transfer"> лазить по
+              деревьям? <br class="advantages-item__description--tablet-transfer"> Пора на диету! Cat Energy Slim
+              поможет <br class="advantages-item__description--desktop-transfer"> <br
+                class="advantages-item__description--tablet-transfer"> вашему питомцу сбросить лишний вес.
             </p>
             <a class="advantages-item__link" href="catalog.html">Каталог Slim <img class="advantages-item__link-icon"
                 src="img/index/main/icon-link-advantages.svg" width="24" height="12" alt="Иконка стрелки"></a>
           </li>
           <li class="advantages-list__item advantages-item">
             <h2 class="advantages-item__header">Набор массы</h2>
-            <p class="advantages-item__description"> Заработать авторитет среди дворовых котов <br class="advantages-item__description--tablet-transfer"> и даже собак? <br class="advantages-item__description--desktop-transfer"> Серия Cat
-              Energy Pro поможет <br class="advantages-item__description--tablet-transfer"> вашему коту нарастить <br class="advantages-item__description--desktop-transfer"> необходимые <br class="advantages-item__description--tablet-transfer"> мышцы!</p>
+            <p class="advantages-item__description"> Заработать авторитет среди дворовых котов <br
+                class="advantages-item__description--tablet-transfer"> и даже собак? <br
+                class="advantages-item__description--desktop-transfer"> Серия Cat
+              Energy Pro поможет <br class="advantages-item__description--tablet-transfer"> вашему коту нарастить <br
+                class="advantages-item__description--desktop-transfer"> необходимые <br
+                class="advantages-item__description--tablet-transfer"> мышцы!</p>
             <a class="advantages-item__link" href="catalog.html">Каталог Pro <img class="advantages-item__link-icon"
                 src="img/index/main/icon-link-advantages.svg" width="24" height="12" alt="Иконка стрелки"></a>
           </li>
@@ -79,21 +100,21 @@
               Выпускается в виде порошка, <br>
               который нужно лишь залить <br>
               кипятком и готово.</p>
-              <span class="work-product-item__number">2</span>
+            <span class="work-product-item__number">2</span>
           </li>
           <li class="work-product-list__item work-product-item">
             <p class="work-product-item__description">
               Замените один-два приема <br>
               обычной еды на наше <br>
               функциональное питание.</p>
-              <span class="work-product-item__number work-product-item__number--margin-desktop-number3">3</span>
+            <span class="work-product-item__number work-product-item__number--margin-desktop-number3">3</span>
           </li>
           <li class="work-product-list__item work-product-item">
             <p class="work-product-item__description">
               Уже через месяц наслаждайтесь <br class="work-product-item__description--tablet-desktop-transfer">
               изменениями к лучшему <br class="work-product-item__description--tablet-desktop-transfer"> вашего
               питомца!</p>
-              <span class="work-product-item__number work-product-item__number--margin-desktop-number4">4</span>
+            <span class="work-product-item__number work-product-item__number--margin-desktop-number4">4</span>
           </li>
         </ul>
       </div>
@@ -102,21 +123,26 @@
       <div class="example__wrapper">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой <br class="example__description--transfer-desktop"> обычный корм на Cat Energy Slim. <br class="example__description--transfer-tablet">
-          Отличный результат <br class="example__description--transfer-desktop"> без изнуряющих тренировок! При этом он не менял своих <br class="example__description--transfer-desktop"> привычек и
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой <br class="example__description--transfer-desktop">
+          обычный корм на Cat Energy Slim. <br class="example__description--transfer-tablet">
+          Отличный результат <br class="example__description--transfer-desktop"> без изнуряющих тренировок! При этом он
+          не менял своих <br class="example__description--transfer-desktop"> привычек и
           по- <br class="example__description--transfer-tablet"> прежнему спит по 16 часов в день.
         </p>
         <ul class="example-advantage-list">
           <li class="example-advantage-list__item example-advantage-list-item">
             <div class="example-advantage-list-item__wrapper-decoration">
               <p class="example-advantage-list-item__value">5 КГ</p>
-              <p class="example-advantage-list-item__key">снижение <br class="example-advantage-list-item__key--mobile-transfer"> веса</p>
+              <p class="example-advantage-list-item__key">снижение <br
+                  class="example-advantage-list-item__key--mobile-transfer"> веса</p>
             </div>
           </li>
           <li class="example-advantage-list__item example-advantage-list-item">
-            <div class="example-advantage-list-item__wrapper-decoration example-advantage-list-item__wrapper-decoration--position-tablet-desktop">
+            <div
+              class="example-advantage-list-item__wrapper-decoration example-advantage-list-item__wrapper-decoration--position-tablet-desktop">
               <p class="example-advantage-list-item__value">60 ДНЕЙ</p>
-              <p class="example-advantage-list-item__key">затрачено <br class="example-advantage-list-item__key--mobile-transfer"> времени</p>
+              <p class="example-advantage-list-item__key">затрачено <br
+                  class="example-advantage-list-item__key--mobile-transfer"> времени</p>
             </div>
           </li>
         </ul>
@@ -132,18 +158,17 @@
     </section>
     <section class="adress">
       <div class="adress__container adress-container">
-        <h2 class="adress-container__title">приглашаем <br class="adress-container__title--transfer-tablet-desktop"> к сотрудничеству <br class="adress-container__title--transfer-tablet-desktop"> дилеров!</h2>
-        <p class="adress-container__description">ул. Большая <br class="adress-container__title--transfer-tablet-desktop"> Конюшенная, д. 19/8 <br class="adress-container__title--transfer-tablet-desktop"> Санкт-Петербург</p>
+        <h2 class="adress-container__title">приглашаем <br class="adress-container__title--transfer-tablet-desktop"> к
+          сотрудничеству <br class="adress-container__title--transfer-tablet-desktop"> дилеров!</h2>
+        <p class="adress-container__description">ул. Большая <br
+            class="adress-container__title--transfer-tablet-desktop"> Конюшенная, д. 19/8 <br
+            class="adress-container__title--transfer-tablet-desktop"> Санкт-Петербург</p>
       </div>
       <div class="adress-location-image-container"><span class="visually-hidden">Фоновое фото локации</span></div>
       <iframe class="adress-location-google"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-      width="320"
-      height="362"
-      allowfullscreen
-      title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8  Санкт-Петербург"
-      ></iframe
-      >
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="320" height="362" allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8  Санкт-Петербург"></iframe>
     </section>
   </main>
   <footer class="footer">

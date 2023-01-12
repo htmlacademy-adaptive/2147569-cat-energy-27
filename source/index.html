@@ -15,8 +15,13 @@
   <header class="header">
     <h2 class="visually-hidden">Магазин специального питания для котов Кэт Энерджи</h2>
     <div class="header__wrapper">
-      <a class="header__logo-link" href="#"> <img class="header__logo-text" src="img/index/header/logo-mobile-link.svg"
-          width="101" height="18" alt="Текстовое лого Кэт Энерджи"> </a>
+      <a class="header__logo-link" href="#">
+        <picture>
+          <source media="(min-width:1200px)" width="202" height="59" srcset="img/index/header/logo-desktop.svg">
+          <source media="(min-width:768px)" width="174" height="52" srcset="img/index/header/logo-tablet.svg">
+          <img class="header__logo" width="34" height="38" srcset="img/index/header/logo-mobile.svg" alt="Лого Кэт Энерджи">
+        </picture>
+        <img class="header__logo-text" src="img/index/header/logo-mobile-link.svg" width="101" height="18" alt="Текстовое лого Кэт Энерджи"> </a>
     </div>
     <nav class="nav nav--opened nav--nojs">
       <div class="nav__container">

@@ -17,18 +17,8 @@
     height: 38px;
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/index/header/logo-mobile.svg");
-      width: 34px;
-      height: 38px;
-      top: 0;
-      left: 0;
-    }
 
     &:active {
       opacity: 0.3;
@@ -55,16 +45,6 @@
     width: 174px;
     height: 52px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/index/header/logo-tablet.svg");
-      width: 174px;
-      height: 52px;
-      top: 0;
-      left: 0;
-    }
-
     &:active {
       opacity: 0.3;
     }
@@ -81,16 +61,6 @@
     position: relative;
     width: 202px;
     height: 59px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/index/header/logo-desktop.svg");
-      width: 202px;
-      height: 59px;
-      top: 0;
-      left: 0;
-    }
 
     &:hover {
       opacity: 0.6;

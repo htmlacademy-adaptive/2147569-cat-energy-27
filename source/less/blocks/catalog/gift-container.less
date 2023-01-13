@@ -1,9 +1,16 @@
 .gift-container {
-  background-image: url("../img/catalog/cat-gift.jpg");
+  background-image: url("../img/catalog/cat-gift@1x.jpg");
   width: 280px;
   height: 290px;
   background-repeat: no-repeat;
   position: relative;
+}
+
+@media (min-resolution: 2dppx) {
+  .gift-container {
+    background-image: url("../img/catalog/cat-gift@2x.jpg");
+    background-size: 280px auto;
+  }
 }
 
 .gift-container--margin {
@@ -34,11 +41,18 @@
 
 @media (min-width: @tablet-width) and (max-width: 1199px) {
   .gift-container {
-    background-image: url("../img/catalog/cat-gift-tablet.jpg");
+    background-image: url("../img/catalog/cat-gift-tablet@1x.jpg");
     width: 709px;
     height: 200px;
     background-repeat: no-repeat;
     position: relative;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gift-container {
+      background-image: url("../img/catalog/cat-gift-tablet@2x.jpg");
+      background-size: 709px auto;
+    }
   }
 
   .gift-container__wrapper-decoration {
@@ -69,13 +83,13 @@
   .gift-container__wrapper-decoration {
     width: 245px;
     position: absolute;
-    top: -1px;
+    top: 0;
     right: 0;
   }
 
   .gift-container--desktop-position {
     position: absolute;
-    top: 117px;
+    top: 115px;
     right: 0;
     margin-top: 0;
   }

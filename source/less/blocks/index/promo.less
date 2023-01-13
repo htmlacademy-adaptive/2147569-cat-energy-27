@@ -25,23 +25,9 @@
   text-transform: uppercase;
 }
 
-.promo__image--tablet {
-  display: none;
-}
-
-.promo__image--desktop {
-  display: none;
-}
-
 @media (max-width: @mobile-width) {
   .promo__wrapper {
     margin-top: -300px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .promo__image {
-    display: none;
   }
 }
 
@@ -67,10 +53,6 @@
     color: #000000;
     margin-left: 80px;
   }
-
-  .promo__image--tablet {
-    display: inline-block;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -95,10 +77,9 @@
     margin-left: 80px;
   }
 
-  .promo__image--desktop {
-    display: inline-block;
-    position: absolute;
+  .promo__image {
     top: -18px;
     right: 226px;
+    position: absolute;
   }
 }

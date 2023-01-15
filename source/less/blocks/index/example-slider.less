@@ -19,6 +19,22 @@
   padding: 0;
 }
 
+.example-slider {
+  position: relative;
+}
+
+.example-slider__toggle {
+  position: absolute;
+  top: 0;
+  left: 120px;
+}
+
+@media (max-width: @mobile-width) {
+  .example-slider__toggle-tablet {
+    display: none;
+  }
+}
+
 @media (min-resolution: 2dppx) {
   .example-slider__wrapper-image-fat {
     background-image: url("../img/index/main/slider-cat-fat-mobile@2x.png");
@@ -37,6 +53,10 @@
     position: absolute;
     top: -160px;
     left: 95px;
+  }
+
+  .example-slider__toggle {
+    display: none;
   }
 
   .example-slider__wrapper-image-fat {
@@ -65,10 +85,57 @@
   }
 }
 
+@media (min-width: @tablet-width) and (max-width: 1199px) {
+  .example-slider__toggle-tablet {
+    position: absolute;
+    top: 0;
+    left: 260px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .example-slider__toggle-desktop {
+    display: none;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .example-slider {
     position: absolute;
     top: -160px;
     left: 663px;
+  }
+
+  .example-slider__toggle-desktop {
+    position: absolute;
+    top: 0;
+    left: 260px;
+    cursor: pointer;
+
+    &:hover {
+      .example-slider__toggle-desktop--color-hover {
+        fill: #68b738;
+      }
+
+      .example-slider__toggle-tablet-desktop--color-hover-stroke {
+        stroke: #68b738;
+      }
+    }
+
+    &:active {
+      .example-slider__toggle-desktop--color-hover {
+        fill: #5eaa2f;
+        opacity: 0.6;
+      }
+
+      .example-slider__toggle-tablet-desktop--color-hover-stroke {
+        stroke: #5eaa2f;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .example-slider__toggle-tablet {
+    display: none;
   }
 }

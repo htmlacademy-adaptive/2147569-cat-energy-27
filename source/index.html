@@ -6,9 +6,10 @@
   <title>Магазин Кэт Энерджи</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img/favicons/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="img/favicons/favicon-16.png" type="image/png" sizes="16x16">
-  <link rel="apple-touch-icon" href="img/favicons/favicon-152.png" sizes="152x152">
+  <link rel="icon" href="/favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="/manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -64,6 +65,9 @@
       <div class="advantages__wrapper">
         <ul class="advantages-list">
           <li class="advantages-list__item advantages-item">
+            <svg class="advantages-item__logo-cat-weightloss" width="50" height="53">
+              <use xlink:href="img/sprite.svg#cat-advantages-weightloss"></use>
+            </svg>
             <h2 class="advantages-item__header">Похудение</h2>
             <p class="advantages-item__description"> Ваш кот весит больше собаки и почти <br
                 class="advantages-item__description--tablet-transfer"> утратил способность <br
@@ -76,6 +80,9 @@
                 src="img/index/main/icon-link-advantages.svg" width="24" height="12" alt="Иконка стрелки"></a>
           </li>
           <li class="advantages-list__item advantages-item">
+            <svg class="advantages-item__logo-cat-weight" width="67" height="50">
+              <use xlink:href="img/sprite.svg#cat-advantages-weight"></use>
+            </svg>
             <h2 class="advantages-item__header">Набор массы</h2>
             <p class="advantages-item__description"> Заработать авторитет среди дворовых котов <br
                 class="advantages-item__description--tablet-transfer"> и даже собак? <br
@@ -94,6 +101,9 @@
         <h2 class="work-product__header">Как это работает</h2>
         <ul class="work-product-list">
           <li class="work-product-list__item work-product-list__item--margin-tablet work-product-item">
+            <svg class="work-product-list__item-logo" width="60" height="60">
+              <use xlink:href="img/sprite.svg#work-description-nutrients"></use>
+            </svg>
             <p class="work-product-item__description">
               Функциональное питание <br>
               содержит только полезные <br>
@@ -101,6 +111,9 @@
             <span class="work-product-item__number">1</span>
           </li>
           <li class="work-product-list__item work-product-list__item--margin-tablet work-product-item">
+            <svg class="work-product-list__item-logo" width="60" height="60">
+              <use xlink:href="img/sprite.svg#work-description-powder"></use>
+            </svg>
             <p class="work-product-item__description">
               Выпускается в виде порошка, <br>
               который нужно лишь залить <br>
@@ -108,6 +121,9 @@
             <span class="work-product-item__number">2</span>
           </li>
           <li class="work-product-list__item work-product-item">
+            <svg class="work-product-list__item-logo" width="60" height="60">
+              <use xlink:href="img/sprite.svg#work-description-replacement"></use>
+            </svg>
             <p class="work-product-item__description">
               Замените один-два приема <br>
               обычной еды на наше <br>
@@ -115,6 +131,9 @@
             <span class="work-product-item__number work-product-item__number--margin-desktop-number3">3</span>
           </li>
           <li class="work-product-list__item work-product-item">
+            <svg class="work-product-list__item-logo" width="60" height="60">
+              <use xlink:href="img/sprite.svg#work-description-time"></use>
+            </svg>
             <p class="work-product-item__description">
               Уже через месяц наслаждайтесь <br class="work-product-item__description--tablet-desktop-transfer">
               изменениями к лучшему <br class="work-product-item__description--tablet-desktop-transfer"> вашего
@@ -132,7 +151,7 @@
           обычный корм на Cat Energy Slim. <br class="example__description--transfer-tablet">
           Отличный результат <br class="example__description--transfer-desktop"> без изнуряющих тренировок! При этом он
           не менял своих <br class="example__description--transfer-desktop"> привычек и
-          по- <br class="example__description--transfer-tablet"> прежнему спит по 16 часов в день.
+          по-<br class="example__description--transfer-tablet">прежнему спит по 16 часов в день.
         </p>
         <ul class="example-advantage-list">
           <li class="example-advantage-list__item example-advantage-list-item">
@@ -154,6 +173,19 @@
         <p class="example__total-price-key">Затраты на питание:</p>
         <p class="example__total-price-value"> 15 000 РУБ.</p>
         <div class="example-slider">
+          <svg class="example-slider__toggle" width="40" height="256">
+            <use xlink:href="img/sprite.svg#slider-toggle"></use>
+          </svg>
+          <svg class="example-slider__toggle-tablet" width="40" height="512">
+            <use xlink:href="img/sprite.svg#slider-toggle-tablet"></use>
+          </svg>
+          <svg class="example-slider__toggle-desktop" width="40" height="512" viewBox="0 0 40 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="example-slider__toggle-desktop--color-hover" x="18" width="4" height="512" rx="2" fill="#666666"/>
+            <rect x="1" y="237" width="38" height="38" rx="19" fill="white"/>
+            <path class="example-slider__toggle-desktop--color-hover" d="M16 247L8 256L16 265V247Z" fill="#666666"/>
+            <path class="example-slider__toggle-desktop--color-hover" d="M32 256L24 247V265L32 256Z" fill="#666666"/>
+            <rect class="example-slider__toggle-tablet-desktop--color-hover-stroke" x="1" y="237" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
+          </svg>
           <div class="example-slider__wrapper-image-fat"><span class="visually-hidden">Фоновое фото толстого кота</span>
           </div>
           <div class="example-slider__wrapper-image-normal"><span class="visually-hidden">Фоновое фото худого
@@ -173,7 +205,11 @@
       <iframe class="adress-location-google"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
         width="320" height="362" allowfullscreen
-        title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8  Санкт-Петербург"></iframe>
+        title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8  Санкт-Петербург">
+      </iframe>
+      <picture>
+        <img class="adress__logo" src="img/index/main/location-logo@1x.webp" width="113" height="106" srcset="img/index/main/location-logo@1x.webp 1x, img/index/main/location-logo@2x.webp 2x" alt="Лого локации.">
+      </picture>
     </section>
   </main>
   <footer class="footer">

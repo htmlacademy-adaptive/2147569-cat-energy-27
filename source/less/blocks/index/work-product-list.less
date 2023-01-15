@@ -11,7 +11,13 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+.work-product-list__item-logo {
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+
+@media (min-width: @tablet-width) and (max-width: 1199px) {
   .work-product-list {
     display: grid;
     grid-template-columns: 243px 243px;
@@ -21,6 +27,16 @@
 
   .work-product-list__item--margin-tablet {
     margin-bottom: 180px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .work-product-list__item-logo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -110px;
+    left: 0;
   }
 }
 

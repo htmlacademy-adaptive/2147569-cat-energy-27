@@ -13,10 +13,28 @@
   background-color: #f2f2f2;
 }
 
+.adress__logo {
+  position: absolute;
+}
+
+@media (max-width: @mobile-width) {
+  .adress__logo {
+    width: 57px;
+    height: 53px;
+    top: 227px;
+    left: 133px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .adress__container {
     width: 628px;
     padding: 56px 70px 56px 70px;
+  }
+
+  .adress__logo {
+    top: 370px;
+    left: 320px;
   }
 }
 
@@ -29,5 +47,10 @@
     top: 93px;
     left: 96px;
     padding: 56px 80px 56px 80px;
+  }
+
+  .adress__logo {
+    top: 134px;
+    left: 902px;
   }
 }

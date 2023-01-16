@@ -10,9 +10,31 @@
   width: 132px;
 }
 
+.social-list__logo {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-list__item:focus-within .social-list__logo {
+  fill: #68b738;
+}
+
 @media (max-width: @mobile-width) {
   .social-list--margin-mobile {
     margin-bottom: 40px;
     margin-top: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    margin: 0;
   }
 }

@@ -69,23 +69,25 @@
           <ul
             class="form__list form__list--desktop-position form__list--appointment-margin form__list--appointment-decoration">
             <li class="form__item">
-              <label class="form__label">
-                <input class="form__input-checkbox" type="checkbox" name="weight-loss" checked>
-                <span
-                  class="form__title-input form__title-input--color-special-grey form__title-input--margin">Похудение</span>
+              <label class="form__label form__label--checkbox">
+                <input class="visually-hidden form__input-checkbox" type="radio" name="product-purpose-group" value="weight-loss" checked>
+                <span class="form__label-mark"></span>
+                <span class="form__title-input form__title-input--color-special-grey">Похудение</span>
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label">
-                <input class="form__input-checkbox" type="checkbox" name="weight-gain">
-                <span class="form__title-input form__title-input--color-special-grey form__title-input--margin">Набор
+              <label class="form__label form__label--checkbox">
+                <input class="visually-hidden form__input-checkbox" type="radio" name="product-purpose-group" value="weight-gain">
+                <span class="form__label-mark"></span>
+                <span class="form__title-input form__title-input--color-special-grey">Набор
                   массы</span>
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label">
-                <input class="form__input-checkbox" type="checkbox" name="need-advice">
-                <span class="form__title-input form__title-input--color-special-grey form__title-input--margin">Не знаю
+              <label class="form__label form__label--checkbox">
+                <input class="visually-hidden form__input-checkbox" type="radio" name="product-purpose-group" value="need-advice">
+                <span class="form__label-mark"></span>
+                <span class="form__title-input form__title-input--color-special-grey">Не знаю
                   (Нужен ваш совет)</span>
               </label>
             </li>
@@ -101,7 +103,7 @@
                   placeholder="kuklachev@gmail.com" name="email" required>
                 <svg class="form__icon-email" width="18" height="14" viewBox="0 0 18 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.5 5.5V13.5H17.5V5.5M0.5 0.5H17.5V2.5L9 8.5L0.5 2.5V0.5Z" stroke="black"
+                  <path d="M0.5 5.5V13.5H17.5V5.5M0.5 0.5H17.5V2.5L9 8.5L0.5 2.5V0.5Z"
                     stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </label>
@@ -115,7 +117,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M7 8H15.5M15.5 8L13 5.5M15.5 8L13 10.5M5.5 0.5V5.5H2.5V10.5H5.5V15.5H3C1.5 15.5 0.5 14.5 0.5 13V3C0.5 1.5 1.5 0.5 3 0.5H5.5Z"
-                    stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </label>
             </li>
@@ -130,29 +132,31 @@
           <legend class="form__group-title form__group-title--margin-tablet">Дополнительно</legend>
           <ul class="form__list form__list--display-position form__list--size-1125">
             <li class="form__item form__item--no-margin">
-              <label class="form__label">
-                <input class="form__input-checkbox" type="checkbox" name="sweetener" checked>
-                <span
-                  class="form__title-input form__title-input--color-black form__title-input--margin">Сахарозаменитель</span>
+              <label class="form__label form__label--checkbox">
+                <input class="visually-hidden form__input-checkbox" type="checkbox" name="add-group" value="sweetener" checked>
+                <span class="form__label-mark"></span>
+                <span class="form__title-input form__title-input--color-black">Сахарозаменитель</span>
               </label>
             </li>
             <li class="form__item form__item--no-margin">
-              <label class="form__label">
-                <input class="form__input-checkbox" type="checkbox" name="drinking-water">
-                <span class="form__title-input form__title-input--color-black form__title-input--margin">Питьевая
-                  вода</span>
+              <label class="form__label form__label--checkbox">
+                <input class="visually-hidden form__input-checkbox" type="checkbox" name="add-group" value="drinking-water">
+                <span class="form__label-mark"></span>
+                <span class="form__title-input form__title-input--color-black">Питьевая вода</span>
               </label>
             </li>
             <li class="form__item form__item--no-margin">
-              <label class="form__label">
-                <input class="form__input-checkbox" type="checkbox" name="milk">
-                <span class="form__title-input form__title-input--color-black form__title-input--margin">Молоко</span>
+              <label class="form__label form__label--checkbox">
+                <input class="visually-hidden form__input-checkbox" type="checkbox" name="add-group" value="milk">
+                <span class="form__label-mark"></span>
+                <span class="form__title-input form__title-input--color-black">Молоко</span>
               </label>
             </li>
             <li class="form__item form__item--no-margin">
-              <label class="form__label">
-                <input class="form__input-checkbox" type="checkbox" name="vitamins">
-                <span class="form__title-input form__title-input--color-black form__title-input--margin">Витамины</span>
+              <label class="form__label form__label--checkbox">
+                <input class="visually-hidden form__input-checkbox" type="checkbox" name="add-group" value="vitamins">
+                <span class="form__label-mark"></span>
+                <span class="form__title-input form__title-input--color-black">Витамины</span>
               </label>
             </li>
           </ul>

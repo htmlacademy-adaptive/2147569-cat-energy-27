@@ -4,6 +4,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover .logo-link-html__logo-svg {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-within .logo-link-html__logo-svg {
+    fill: #68b738;
+  }
 }
 
 .logo-link-html__title {
@@ -13,6 +25,10 @@
 
 .logo-link-html--size-280 {
   width: 280px;
+}
+
+.logo-link-html__logo-svg {
+  fill: #666666;
 }
 
 @media (min-width: @tablet-width) {

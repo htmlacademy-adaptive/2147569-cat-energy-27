@@ -28,7 +28,7 @@
         <button class="nav__toggle" type="button"><span class="visually-hidden">Кнопка открытия/закрытия
             меню</span></button>
         <ul class="nav__list">
-          <li class="nav__item"> <a class="nav__link nav__link--desktop-color nav__link--home-mobile"
+          <li class="nav__item nav__item--home-mobile-decoration"> <a class="nav__link nav__link--desktop-color nav__link--home-mobile"
               href="index.html">Главная</a> </li>
           <li class="nav__item"> <a class="nav__link nav__link--desktop-color nav__link--catalog-current"
               href="#">Каталог Продукции</a> </li>
@@ -359,25 +359,40 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <a class="footer__logo-link" href="#"><img src="img/index/header/logo-mobile-link.svg" width="128" height="24"
-          alt="Текстовое лого Кэт Энерджи"> </a>
+      <a class="footer__logo-link" href="index.html">
+        <svg class="footer__logo-link-svg" width="128" height="24">
+          <use xlink:href="img/sprite.svg#logo-mobile-link"></use>
+        </svg>
+      </a>
       <ul class="social-list social-list--size-132 social-list--margin-mobile">
         <li class="social-list__item">
-          <a class="social-list__link" href="#"><img src="img/index/footer/vkontakte-social.svg" width="28" height="22"
-              alt="Ссылка вконтакте"></a>
+          <a class="social-list__link" href="#">
+            <svg class="social-list__logo" width="28" height="22">
+              <use xlink:href="img/sprite.svg#logo-vkontakte"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#"><img src="img/index/footer/youtube-social.svg" width="28" height="22"
-              alt="Ссылка ютуб"></a>
+          <a class="social-list__link" href="#">
+            <svg class="social-list__logo" width="28" height="22">
+              <use xlink:href="img/sprite.svg#logo-youtube"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#"><img src="img/index/footer/telegram-social.svg" width="28" height="22"
-              alt="Ссылка телеграмм"></a>
+          <a class="social-list__link" href="#">
+           <svg class="social-list__logo" width="28" height="22">
+            <use xlink:href="img/sprite.svg#logo-telegram"></use>
+           </svg>
+          </a>
         </li>
       </ul>
       <a class="logo-link-html logo-link-html--size-280" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="logo-link-html__title">HTML Academy</span> <img src="img/index/footer/html-logo.svg"
-          alt="Ссылка академии"></a>
+       <span class="logo-link-html__title">HTML Academy</span>
+       <svg class="logo-link-html__logo-svg" width="27" height="34">
+        <use xlink:href="img/sprite.svg#logo-html"></use>
+       </svg>
+      </a>
     </div>
   </footer>
   <script src="js/script.js"></script>

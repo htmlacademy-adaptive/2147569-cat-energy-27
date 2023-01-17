@@ -3,6 +3,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .nav__link {
@@ -27,7 +28,7 @@
 @media (max-width: @mobile-width) {
   .nav__container {
     position: absolute;
-    top: 58px;
+    top: 62px;
     z-index: 2;
     background-color: #ffffff;
     width: 320px;
@@ -96,11 +97,11 @@
   }
 
   .nav__link {
-    padding: 13px 70px 19px;
+    padding: 19px 70px 15px;
   }
 
   .nav__link--home-mobile {
-    padding: 12px 121px 20px;
+    padding: 18px 121px 14px;
   }
 
   .nav__item--home-mobile-decoration {
@@ -108,7 +109,7 @@
   }
 
   .nav__item {
-    padding: 19px 0 23px;
+    padding: 25px 0 18px;
     border-bottom: 1px solid #e6e6e6;
   }
 }
@@ -122,6 +123,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-left: 0;
+    margin-top: 19px;
   }
 
   .nav__link {
@@ -172,7 +174,7 @@
 
 @media (min-width: @desktop-width) {
   .nav__container {
-    width: 478px;
+    width: 483px;
   }
 
   .nav__list {
@@ -195,7 +197,7 @@
     background-color: #ffffff;
     width: 71px;
     left: 2px;
-    bottom: -8px;
+    bottom: -6px;
   }
 
   .nav__link--form-current::after {

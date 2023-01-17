@@ -4,6 +4,7 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .example-advantage-list__item {
@@ -19,6 +20,16 @@
   }
 
   .example-advantage-list {
-    width: 366px;
+    width: 368px;
+    position: absolute;
+    top: -329px;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example-advantage-list {
+    top: 233px;
+    left: 0;
   }
 }

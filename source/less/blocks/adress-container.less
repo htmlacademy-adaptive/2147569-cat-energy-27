@@ -6,11 +6,14 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  margin-top: 27px;
+  margin-bottom: 25px;
 }
 
 .adress-container__description {
   line-height: 20px;
   color: @base_color;
+  margin-top: 27px;
 }
 
 @media (max-width: @mobile-width) {
@@ -24,10 +27,17 @@
     text-align: right;
     font-size: 16px;
     line-height: 20px;
+    margin-top: 22px;
   }
 
   .adress-container__title {
     font-size: 20px;
     line-height: 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .adress-container__description {
+    text-align: start;
   }
 }

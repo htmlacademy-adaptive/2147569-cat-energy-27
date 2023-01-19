@@ -8,7 +8,16 @@
   line-height: @base_line-height;
   text-transform: uppercase;
   background-color: #68b738;
-  padding: 9px 73px;
+  padding: 10px 73px;
+  display: block;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -17,7 +26,14 @@
     line-height: 20px;
     padding: 17px 27px;
     position: absolute;
-    left: 83px;
+    left: 92px;
     top: 230px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-button--tablet-desktop {
+    left: 83px;
+    top: 231px;
   }
 }

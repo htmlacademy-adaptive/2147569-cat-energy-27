@@ -6,9 +6,10 @@
   <title>Магазин Кэт Энерджи</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img/favicons/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="img/favicons/favicon-16.png" type="image/png" sizes="16x16">
-  <link rel="apple-touch-icon" href="img/favicons/favicon-152.png" sizes="152x152">
+  <link rel="icon" href="/favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="/manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -19,9 +20,12 @@
         <picture>
           <source media="(min-width:1200px)" width="202" height="59" srcset="img/index/header/logo-desktop.svg">
           <source media="(min-width:768px)" width="174" height="52" srcset="img/index/header/logo-tablet.svg">
-          <img class="header__logo" width="34" height="38" srcset="img/index/header/logo-mobile.svg" alt="Лого Кэт Энерджи">
+          <img class="header__logo" width="34" height="38" srcset="img/index/header/logo-mobile.svg"
+            alt="Лого Кэт Энерджи">
         </picture>
-        <img class="header__logo-text" src="img/index/header/logo-mobile-link.svg" width="101" height="18" alt="Текстовое лого Кэт Энерджи"> </a>
+        <img class="header__logo-text" src="img/index/header/logo-mobile-link.svg" width="101" height="18"
+          alt="Текстовое лого Кэт Энерджи">
+      </a>
     </div>
     <nav class="nav nav--opened nav--nojs">
       <div class="nav__container">
@@ -63,7 +67,10 @@
     <section class="advantages">
       <div class="advantages__wrapper">
         <ul class="advantages-list">
-          <li class="advantages-list__item advantages-item">
+          <li class="advantages-list__item advantages-item advantages-list__item--padding-desktop">
+            <svg class="advantages-item__logo-cat-weightloss" width="50" height="53">
+              <use xlink:href="img/sprite.svg#cat-advantages-weightloss"></use>
+            </svg>
             <h2 class="advantages-item__header">Похудение</h2>
             <p class="advantages-item__description"> Ваш кот весит больше собаки и почти <br
                 class="advantages-item__description--tablet-transfer"> утратил способность <br
@@ -72,10 +79,16 @@
               поможет <br class="advantages-item__description--desktop-transfer"> <br
                 class="advantages-item__description--tablet-transfer"> вашему питомцу сбросить лишний вес.
             </p>
-            <a class="advantages-item__link" href="catalog.html">Каталог Slim <img class="advantages-item__link-icon"
-                src="img/index/main/icon-link-advantages.svg" width="24" height="12" alt="Иконка стрелки"></a>
+            <a class="advantages-item__link" href="catalog.html">Каталог Slim
+              <svg class="advantages-item__link-icon" width="32" height="12">
+                <use xlink:href="img/sprite.svg#icon-link-advantages"></use>
+              </svg>
+            </a>
           </li>
           <li class="advantages-list__item advantages-item">
+            <svg class="advantages-item__logo-cat-weight" width="67" height="50">
+              <use xlink:href="img/sprite.svg#cat-advantages-weight"></use>
+            </svg>
             <h2 class="advantages-item__header">Набор массы</h2>
             <p class="advantages-item__description"> Заработать авторитет среди дворовых котов <br
                 class="advantages-item__description--tablet-transfer"> и даже собак? <br
@@ -83,8 +96,11 @@
               Energy Pro поможет <br class="advantages-item__description--tablet-transfer"> вашему коту нарастить <br
                 class="advantages-item__description--desktop-transfer"> необходимые <br
                 class="advantages-item__description--tablet-transfer"> мышцы!</p>
-            <a class="advantages-item__link" href="catalog.html">Каталог Pro <img class="advantages-item__link-icon"
-                src="img/index/main/icon-link-advantages.svg" width="24" height="12" alt="Иконка стрелки"></a>
+            <a class="advantages-item__link" href="catalog.html">Каталог Pro
+              <svg class="advantages-item__link-icon" width="32" height="12">
+                <use xlink:href="img/sprite.svg#icon-link-advantages"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -94,27 +110,41 @@
         <h2 class="work-product__header">Как это работает</h2>
         <ul class="work-product-list">
           <li class="work-product-list__item work-product-list__item--margin-tablet work-product-item">
+            <svg class="work-product-list__item-logo" width="60" height="60">
+              <use xlink:href="img/sprite.svg#work-description-nutrients"></use>
+            </svg>
             <p class="work-product-item__description">
               Функциональное питание <br>
               содержит только полезные <br>
               питательные вещества.</p>
-            <span class="work-product-item__number">1</span>
+            <span class="work-product-item__number work-product-item__number--tablet-position">1</span>
           </li>
           <li class="work-product-list__item work-product-list__item--margin-tablet work-product-item">
+            <svg class="work-product-list__item-logo work-product-list__item-logo--position-desktop" width="60"
+              height="60">
+              <use xlink:href="img/sprite.svg#work-description-powder"></use>
+            </svg>
             <p class="work-product-item__description">
               Выпускается в виде порошка, <br>
               который нужно лишь залить <br>
               кипятком и готово.</p>
-            <span class="work-product-item__number">2</span>
+            <span class="work-product-item__number work-product-item__number--margin-desktop-number2">2</span>
           </li>
-          <li class="work-product-list__item work-product-item">
+          <li class="work-product-list__item work-product-item work-product-list__item--no-margin">
+            <svg class="work-product-list__item-logo" width="60" height="60">
+              <use xlink:href="img/sprite.svg#work-description-replacement"></use>
+            </svg>
             <p class="work-product-item__description">
               Замените один-два приема <br>
               обычной еды на наше <br>
               функциональное питание.</p>
             <span class="work-product-item__number work-product-item__number--margin-desktop-number3">3</span>
           </li>
-          <li class="work-product-list__item work-product-item">
+          <li class="work-product-list__item work-product-item work-product-list__item--no-margin">
+            <svg class="work-product-list__item-logo work-product-list__item-logo--position-desktop" width="60"
+              height="60">
+              <use xlink:href="img/sprite.svg#work-description-time"></use>
+            </svg>
             <p class="work-product-item__description">
               Уже через месяц наслаждайтесь <br class="work-product-item__description--tablet-desktop-transfer">
               изменениями к лучшему <br class="work-product-item__description--tablet-desktop-transfer"> вашего
@@ -132,7 +162,7 @@
           обычный корм на Cat Energy Slim. <br class="example__description--transfer-tablet">
           Отличный результат <br class="example__description--transfer-desktop"> без изнуряющих тренировок! При этом он
           не менял своих <br class="example__description--transfer-desktop"> привычек и
-          по- <br class="example__description--transfer-tablet"> прежнему спит по 16 часов в день.
+          по-<br class="example__description--transfer-tablet">прежнему спит по 16 часов в день.
         </p>
         <ul class="example-advantage-list">
           <li class="example-advantage-list__item example-advantage-list-item">
@@ -154,6 +184,24 @@
         <p class="example__total-price-key">Затраты на питание:</p>
         <p class="example__total-price-value"> 15 000 РУБ.</p>
         <div class="example-slider">
+          <svg class="example-slider__toggle" width="40" height="256" viewBox="0 0 40 256" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect class="example-slider__toggle--color-hover" x="18" width="4" height="256" rx="2" fill="#666666" />
+            <rect x="1" y="109" width="38" height="38" rx="19" fill="white" />
+            <path class="example-slider__toggle--color-hover" d="M16 119L8 128L16 137V119Z" fill="#666666" />
+            <path class="example-slider__toggle--color-hover" d="M32 128L24 119V137L32 128Z" fill="#666666" />
+            <rect class="example-slider__toggle--color-hover-stroke" x="1" y="109" width="38" height="38" rx="19"
+              stroke="#666666" stroke-width="2" />
+          </svg>
+          <svg class="example-slider__toggle-tablet-desktop" width="40" height="512" viewBox="0 0 40 512" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect class="example-slider__toggle--color-hover" x="18" width="4" height="512" rx="2" fill="#666666" />
+            <rect x="1" y="237" width="38" height="38" rx="19" fill="white" />
+            <path class="example-slider__toggle--color-hover" d="M16 247L8 256L16 265V247Z" fill="#666666" />
+            <path class="example-slider__toggle--color-hover" d="M32 256L24 247V265L32 256Z" fill="#666666" />
+            <rect class="example-slider__toggle--color-hover-stroke" x="1" y="237" width="38" height="38" rx="19"
+              stroke="#666666" stroke-width="2" />
+          </svg>
           <div class="example-slider__wrapper-image-fat"><span class="visually-hidden">Фоновое фото толстого кота</span>
           </div>
           <div class="example-slider__wrapper-image-normal"><span class="visually-hidden">Фоновое фото худого
@@ -163,41 +211,61 @@
     </section>
     <section class="adress">
       <div class="adress__container adress-container">
-        <h2 class="adress-container__title">приглашаем <br class="adress-container__title--transfer-tablet-desktop"> к
-          сотрудничеству <br class="adress-container__title--transfer-tablet-desktop"> дилеров!</h2>
-        <p class="adress-container__description">ул. Большая <br
-            class="adress-container__title--transfer-tablet-desktop"> Конюшенная, д. 19/8 <br
-            class="adress-container__title--transfer-tablet-desktop"> Санкт-Петербург</p>
+        <h2 class="adress-container__title">приглашаем <br> к
+          сотрудничеству <br> дилеров!</h2>
+        <p class="adress-container__description">ул. Большая <br> Конюшенная, д. 19/8 <br>
+          <br class="adress-container__title--transfer-tablet-desktop"> Санкт-Петербург
+        </p>
       </div>
       <div class="adress-location-image-container"><span class="visually-hidden">Фоновое фото локации</span></div>
       <iframe class="adress-location-google"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
         width="320" height="362" allowfullscreen
-        title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8  Санкт-Петербург"></iframe>
+        title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8  Санкт-Петербург">
+      </iframe>
+      <picture>
+        <img class="adress__logo" src="img/index/main/location-logo@1x.webp" width="113" height="106"
+          srcset="img/index/main/location-logo@1x.webp 1x, img/index/main/location-logo@2x.webp 2x" alt="Лого локации.">
+      </picture>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <a class="footer__logo-link" href="#"><img src="img/index/header/logo-mobile-link.svg" width="128" height="24"
-          alt="Текстовое лого Кэт Энерджи"> </a>
+      <a class="footer__logo-link" href="#">
+        <svg class="footer__logo-link-svg" width="128" height="24">
+          <use xlink:href="img/sprite.svg#logo-mobile-link"></use>
+        </svg>
+      </a>
       <ul class="social-list social-list--size-132 social-list--margin-mobile">
         <li class="social-list__item">
-          <a class="social-list__link" href="#"><img src="img/index/footer/vkontakte-social.svg" width="28" height="22"
-              alt="Ссылка вконтакте"></a>
+          <a class="social-list__link" href="#">
+            <svg class="social-list__logo" width="28" height="22">
+              <use xlink:href="img/sprite.svg#logo-vkontakte"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#"><img src="img/index/footer/youtube-social.svg" width="28" height="22"
-              alt="Ссылка ютуб"></a>
+          <a class="social-list__link" href="#">
+            <svg class="social-list__logo" width="28" height="22">
+              <use xlink:href="img/sprite.svg#logo-youtube"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#"><img src="img/index/footer/telegram-social.svg" width="28" height="22"
-              alt="Ссылка телеграмм"></a>
+          <a class="social-list__link" href="#">
+            <svg class="social-list__logo" width="28" height="22">
+              <use xlink:href="img/sprite.svg#logo-telegram"></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <a class="logo-link-html logo-link-html--size-280" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="logo-link-html__title">HTML Academy</span> <img src="img/index/footer/html-logo.svg"
-          alt="Ссылка академии"></a>
+        <span class="logo-link-html__title">HTML Academy</span>
+        <svg class="logo-link-html__logo-svg" width="27" height="34">
+          <use xlink:href="img/sprite.svg#logo-html"></use>
+        </svg>
+      </a>
     </div>
   </footer>
   <script src="js/script.js"></script>

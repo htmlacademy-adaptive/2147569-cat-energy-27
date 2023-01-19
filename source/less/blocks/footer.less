@@ -14,6 +14,18 @@
   display: flex;
   align-self: center;
   margin-bottom: 40px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: @mobile-width) {
@@ -34,11 +46,16 @@
   .footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px 30px;
+    padding: 56px 31px;
   }
 
   .footer__logo-link {
     margin-bottom: 0;
+  }
+
+  .footer__logo-link-svg {
+    width: 143px;
+    height: 27px;
   }
 }
 

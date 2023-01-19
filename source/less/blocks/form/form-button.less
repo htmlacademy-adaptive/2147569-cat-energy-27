@@ -11,21 +11,33 @@
   height: 40px;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form-button--margin {
-  margin-top: 34px;
+  margin-top: 36px;
   margin-bottom: 21px;
 }
 
 @media (min-width: @tablet-width) {
   .form-button {
     height: 52px;
+    font-size: 20px;
+    line-height: 0;
+    margin-left: 2px;
+    width: 282px;
   }
 
   .form-button--margin {
-    margin-top: 54px;
-    margin-bottom: 52px;
+    margin-top: 41px;
+    margin-bottom: 72px;
   }
 }
 
@@ -35,7 +47,7 @@
   }
 
   .form-button--margin {
-    margin-top: 61px;
+    margin-top: 66px;
     margin-bottom: 82px;
   }
 

@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин Кэт Энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/favicon-svg.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicons/favicon-16.png" type="image/png">
   <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="/manifest.webmanifest">
 </head>
@@ -224,8 +225,9 @@
         title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8  Санкт-Петербург">
       </iframe>
       <picture>
-        <img class="adress__logo" src="img/index/main/location-logo@1x.webp" width="113" height="106"
-          srcset="img/index/main/location-logo@1x.webp 1x, img/index/main/location-logo@2x.webp 2x" alt="Лого локации.">
+        <source media="(max-width:767px)" width="57" height="53" srcset="img/index/main/location-logo@1x.webp 1x, img/index/main/location-logo@2x.webp 2x">
+        <img class="adress__logo" src="img/index/main/location-logo@1x.png" width="113" height="106"
+          srcset="img/index/main/location-logo@1x.png 1x, img/index/main/location-logo@2x.png 2x" alt="Лого локации.">
       </picture>
     </section>
   </main>

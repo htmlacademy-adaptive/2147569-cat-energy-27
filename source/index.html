@@ -11,6 +11,11 @@
   <link rel="icon" href="img/favicons/favicon-16.png" type="image/png">
   <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="img/index/main/image-promo-desktop@1x.webp" as="image">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font">
 </head>
 
 <body class="page__body">
@@ -21,11 +26,11 @@
         <picture>
           <source media="(min-width:1200px)" width="202" height="59" srcset="img/index/header/logo-desktop.svg">
           <source media="(min-width:768px)" width="174" height="52" srcset="img/index/header/logo-tablet.svg">
-          <img class="header__logo" width="34" height="38" srcset="img/index/header/logo-mobile.svg"
-            alt="Лого Кэт Энерджи">
+          <img class="header__logo" width="34" height="38" src="img/index/header/logo-mobile.svg" srcset="img/index/header/logo-mobile.svg"
+            alt="Лого Кэт Энерджи.">
         </picture>
         <img class="header__logo-text" src="img/index/header/logo-mobile-link.svg" width="101" height="18"
-          alt="Текстовое лого Кэт Энерджи">
+          alt="Текстовое лого Кэт Энерджи.">
       </a>
     </div>
     <nav class="nav nav--opened nav--nojs">
@@ -55,12 +60,12 @@
         <p class="promo__description">Занялся собой? Займись котом!</p>
         <picture>
           <source media="(min-width:1200px)" width="552" height="499"
-            srcset="img/index/main/image-promo-desktop@1x.png 1x, img/index/main/image-promo-desktop@2x.png 2x">
+            srcset="img/index/main/image-promo-desktop@1x.webp 1x, img/index/main/image-promo-desktop@2x.webp 2x">
           <source media="(min-width:768px)" width="709" height="609"
-            srcset="img/index/main/image-promo-tablet@1x.jpg 1x, img/index/main/image-promo-tablet@2x.jpg 2x">
-          <img class="promo__image" width="280" height="270" src="img/index/main/image-promo@1x.png"
-            srcset="img/index/main/image-promo@1x.png 1x, img/index/main/image-promo@2x.png 2x"
-            alt="Промо картинка продукта">
+            srcset="img/index/main/image-promo-tablet@1x.webp 1x, img/index/main/image-promo-tablet@2x.webp 2x">
+          <img class="promo__image" width="280" height="270" src="img/index/main/image-promo@1x.webp"
+            srcset="img/index/main/image-promo@1x.webp 1x, img/index/main/image-promo@2x.webp 2x"
+            alt="Промо картинка продукта.">
         </picture>
         <a class="promo-button promo-button--tablet-desktop" href="form.html">Подобрать программу</a>
       </div>

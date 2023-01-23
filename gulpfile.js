@@ -3,6 +3,7 @@ import plumber from 'gulp-plumber';
 import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
+import htmlmin from 'gulp-htmlmin';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
@@ -30,6 +31,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 

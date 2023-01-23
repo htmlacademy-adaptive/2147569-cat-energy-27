@@ -11,6 +11,9 @@
   <link rel="icon" href="img/favicons/favicon-16.png" type="image/png">
   <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font">
 </head>
 
 <body class="page__body">
@@ -21,11 +24,11 @@
         <picture>
           <source media="(min-width:1200px)" width="202" height="59" srcset="img/index/header/logo-desktop.svg">
           <source media="(min-width:768px)" width="174" height="52" srcset="img/index/header/logo-tablet.svg">
-          <img class="header__logo" width="34" height="38" srcset="img/index/header/logo-mobile.svg"
-            alt="Лого Кэт Энерджи">
+          <img class="header__logo" width="34" height="38" src="img/index/header/logo-mobile-link.svg" srcset="img/index/header/logo-mobile.svg"
+            alt="Лого Кэт Энерджи.">
         </picture>
         <img class="header__logo-text" src="img/index/header/logo-mobile-link.svg" width="101" height="18"
-          alt="Текстовое лого Кэт Энерджи">
+          alt="Текстовое лого Кэт Энерджи.">
       </a>
     </div>
     <nav class="nav nav--opened nav--nojs">
@@ -190,8 +193,9 @@
         title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8  Санкт-Петербург">
       </iframe>
       <picture>
-        <img class="adress__logo" src="img/index/main/location-logo@1x.webp" width="113" height="106"
-          srcset="img/index/main/location-logo@1x.webp 1x, img/index/main/location-logo@2x.webp 2x" alt="Лого локации.">
+        <source type="image/webp" media="(max-width:767px)" width="57" height="53" srcset="img/index/main/location-logo@1x.webp 1x, img/index/main/location-logo@2x.webp 2x">
+        <img class="adress__logo" src="img/index/main/location-logo@1x.png" width="113" height="106"
+          srcset="img/index/main/location-logo@1x.png 1x, img/index/main/location-logo@2x.png 2x" alt="Лого локации.">
       </picture>
     </section>
   </main>

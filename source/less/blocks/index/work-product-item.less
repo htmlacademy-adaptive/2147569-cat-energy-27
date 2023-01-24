@@ -8,12 +8,18 @@
   margin-left: 80px;
 }
 
+.work-product-item__logo {
+  position: absolute;
+  top: -3px;
+  left: 2px;
+}
+
 @media (max-width: @mobile-width) {
   .work-product-item__number {
     display: none;
   }
 
-  .work-product-item__description--tablet-desktop-transfer {
+  .work-product-item__description-tablet-desktop-transfer {
     display: none;
   }
 }
@@ -30,6 +36,14 @@
 @media (min-width: @tablet-width) {
   .work-product-item__description {
     margin-left: 0;
+  }
+
+  .work-product-item__logo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -111px;
+    left: 0;
   }
 
   .work-product-item__number {
@@ -59,5 +73,9 @@
 
   .work-product-item__number--margin-desktop-number2 {
     right: -32px;
+  }
+
+  .work-product-item__logo--position-desktop {
+    left: 6px;
   }
 }

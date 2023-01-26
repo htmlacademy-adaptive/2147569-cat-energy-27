@@ -100,6 +100,7 @@
     top: 0;
     left: 260px;
     cursor: pointer;
+    outline: none;
 
     &:hover {
       .example-slider__toggle-item--color-hover {
@@ -120,6 +121,16 @@
       .example-slider__toggle-item--color-hover-stroke {
         stroke: #5eaa2f;
         opacity: 0.6;
+      }
+    }
+
+    &:focus-visible {
+      .example-slider__toggle-item--color-hover {
+        fill: #68b738;
+      }
+
+      .example-slider__toggle-item--color-hover-stroke {
+        stroke: #68b738;
       }
     }
   }

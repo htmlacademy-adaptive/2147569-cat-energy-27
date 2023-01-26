@@ -21,7 +21,7 @@
     justify-content: flex-start;
   }
 
-  .work-product-list__item--margin-tablet {
+  .work-product-list__item {
     margin-bottom: 181px;
   }
 }
@@ -31,7 +31,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 0 10px 0;
     padding-inline-start: 0;
+  }
+
+  .work-product-list__item:not(:last-child) {
+    margin-right: 42px;
+  }
+
+  .work-product-list__item {
+    margin-bottom: 188px;
   }
 }

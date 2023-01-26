@@ -1,27 +1,23 @@
-
-.products-item {
-  position: relative;
-  padding: 19px 0 14px 0;
-}
-
 .products-item__card-link {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .products-item__card-image {
-  position: absolute;
-  top: 36px;
-  left: 28px;
+  margin-left: 27px;
+  margin-bottom: 10px;
 }
 
 .products-item__card-image--position {
-  left: 36px;
-  top: 53px;
+  margin-left: 36px;
+  margin-bottom: 17px;
 }
 
 .products-item__card-image--position-one {
-  left: 36px;
-  top: 39px;
+  margin-left: 36px;
+  margin-bottom: 20px;
 }
 
 .products-item__card-title {
@@ -32,15 +28,12 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
-  position: absolute;
-  top: 13px;
-  right: 70px;
+  margin-top: 26px;
 }
 
-.products-item__features-list {
-  position: absolute;
-  bottom: 70px;
-  right: 2px;
+.products-item__container {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: @mobile-width) {
@@ -55,6 +48,11 @@
     padding: 0 37px 39px 39px;
   }
 
+  .products-item__card-link {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .products-item--title-transfer {
     display: none;
   }
@@ -63,57 +61,44 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    top: 128px;
-    left: 74px;
-    margin-top: 34px;
+    margin-top: 24px;
     margin-bottom: 21px;
   }
 
   .products-item__card-image {
-    position: absolute;
-    top: -73px;
-    left: 79px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: -73px;
   }
 
   .products-item__card-image--position {
-    left: 81px;
-    top: -47px;
+    margin-top: -42px;
   }
 
   .products-item__card-image--position-one {
-    left: 82px;
-    top: -45px;
-  }
-
-  .products-item__features-list {
-    bottom: 105px;
-    right: 37px;
+    margin-top: -40px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .products-item__card-title {
     line-height: 21px;
-    top: 113px;
-    margin-top: 51px;
-    margin-bottom: 22px;
-    left: 14px;
-    right: 0;
+    margin-top: 38px;
+    margin-bottom: 26px;
   }
 
   .products-item__card-image {
-    left: 45px;
-    top: -85px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: -87px;
   }
 
   .products-item__card-image--position {
-    left: 47px;
-    top: -53px;
+    margin-top: -55px;
   }
 
   .products-item__card-image--position-one {
-    left: 46px;
-    top: -52px;
+    margin-top: -55px;
   }
 
   .products-item {

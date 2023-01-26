@@ -8,56 +8,37 @@
   flex-wrap: wrap;
 }
 
-.add-products-list__item:not(:last-child) {
-  margin-bottom: 31px;
+.add-products-list__item {
+  border-bottom: #cdcdcd solid 1px;
+  padding-bottom: 19px;
+  margin-bottom: 11px;
 }
 
-.add-products-list--decoration {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    border: #cdcdcd solid 1px;
-    top: -15px;
-    left: 0;
-    box-shadow: 0 129px 0 0 #cdcdcd, 0 258px 0 0 #cdcdcd, 0 388px 0 0 #cdcdcd, 0 517px 0 0 #cdcdcd;
+@media (max-width: @mobile-width) {
+  .add-products-list__item--decoration-top {
+    border-top: #cdcdcd solid 1px;
+    padding-top: 13px;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .add-products-list {
-    padding: 26px 38px 28px 38px;
+  .add-products-list__item {
+    padding: 0 0 24px 36px;
+    width: 665px;
+    margin-bottom: 0;
   }
 
   .add-products-list__item:not(:last-child) {
-    margin-bottom: 54px;
-  }
-
-  .add-products-list--decoration {
-    &::after {
-      width: 707px;
-      border: #cdcdcd solid 1px;
-      top: 137px;
-      left: 0;
-      box-shadow: 0 141px 0 0 #cdcdcd, 0 278px 0 0 #cdcdcd;
-    }
+    margin-bottom: 29px;
   }
 }
 
 @media (min-width: @tablet-width) and (max-width: 1199px) {
-  .add-products-list--decoration {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 707px;
-      height: 556px;
-      border: #cdcdcd solid 1px;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
+  .add-products-list {
+    padding: 24px 0 0 0;
+    border-top: #cdcdcd solid 1px;
+    border-right: #cdcdcd solid 1px;
+    border-left: #cdcdcd solid 1px;
   }
 }
 
@@ -67,6 +48,7 @@
     justify-content: space-between;
     align-items: center;
     width: 896px;
+    padding: 0 0 17px 0;
   }
 
   .add-products-list {
@@ -74,16 +56,11 @@
   }
 
   .add-products-list__item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: 14px;
   }
 
-  .add-products-list--decoration {
-    &::after {
-      width: 895px;
-      border: #cdcdcd solid 1px;
-      top: -19px;
-      left: 0;
-      box-shadow: 0 72px 0 0 #cdcdcd, 0 144px 0 0 #cdcdcd, 0 216px 0 0 #cdcdcd, 0 288px 0 0 #cdcdcd;
-    }
+  .add-products-list__item--decoration-top {
+    border-top: #cdcdcd solid 1px;
+    padding-top: 15px;
   }
 }

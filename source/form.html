@@ -31,8 +31,7 @@
           alt="Текстовое лого Кэт Энерджи.">
       </a>
     </div>
-    <nav class="nav nav--opened nav--nojs">
-      <div class="nav__container">
+    <nav class="nav nav--opened nav--position-absolute nav--nojs">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Кнопка открытия/закрытия
             меню</span></button>
         <ul class="nav__list">
@@ -43,7 +42,6 @@
           <li class="nav__item"> <a class="nav__link nav__link--desktop-color nav__link--form-current" href="#">Подбор
               Программы</a> </li>
         </ul>
-      </div>
     </nav>
   </header>
   <main class="form">
@@ -51,6 +49,7 @@
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__description">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
       <form class="form__filter" action="#" method="get">
+        <div class="form__desktop-container">
         <fieldset class="form__filter-group">
           <legend class="visually-hidden">Данные кота</legend>
           <ul class="form__list form__list--size-569 form__list--desktop-name-margin">
@@ -75,10 +74,10 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__filter-group">
+        <fieldset class="form__filter-group form__filter-group--appointment-decoration form__filter-group--appointment-margin">
           <legend class="visually-hidden">Назначение продукта</legend>
           <ul
-            class="form__list form__list--desktop-position form__list--appointment-margin form__list--appointment-decoration">
+            class="form__list">
             <li class="form__item form__item--margin-radiocheck">
               <label class="form__label form__label--checkbox">
                 <input class="visually-hidden form__input-checkbox" type="radio" name="product-purpose-group"
@@ -107,6 +106,7 @@
             </li>
           </ul>
         </fieldset>
+        </div>
         <fieldset class="form__filter-group form__filter-group--decoration-data">
           <legend class="form__group-title">Контактные данные (владельца кота)</legend>
           <ul class="form__list form__list--desktop-flex-row">
@@ -141,7 +141,7 @@
           <legend
             class="form__group-title form__group-title--margin-add form__group-title--margin-tablet form__group-title--margin-desktop">
             Дополнительно</legend>
-          <ul class="form__list form__list--display-position form__list--size-1125 form__list--desktop-flex-row">
+          <ul class="form__list form__list--display-grid-tablet form__list--size-1125 form__list--desktop-flex-row">
             <li class="form__item form__item--no-margin form__item--margin-checkbox">
               <label class="form__label form__label--checkbox">
                 <input class="visually-hidden form__input-checkbox" type="checkbox" name="add-group" value="sweetener"
@@ -151,7 +151,7 @@
               </label>
             </li>
             <li class="form__item form__item--no-margin form__item--margin-checkbox">
-              <label class="form__label form__label--checkbox form__label--checkbox-margin-water">
+              <label class="form__label form__label--checkbox">
                 <input class="visually-hidden form__input-checkbox" type="checkbox" name="add-group"
                   value="drinking-water">
                 <span class="form__label-mark"></span>
@@ -159,7 +159,7 @@
               </label>
             </li>
             <li class="form__item form__item--no-margin form__item--margin-checkbox">
-              <label class="form__label form__label--checkbox form__label--checkbox-margin-milk">
+              <label class="form__label form__label--checkbox">
                 <input class="visually-hidden form__input-checkbox" type="checkbox" name="add-group" value="milk">
                 <span class="form__label-mark"></span>
                 <span class="form__title-input form__title-input--color-black">Молоко</span>
@@ -183,7 +183,7 @@
         <h2 class="adress-container__title">приглашаем <br> к
           сотрудничеству <br> дилеров!</h2>
         <p class="adress-container__description">ул. Большая <br> Конюшенная, д. 19/8 <br>
-          <br class="adress-container__title--transfer-tablet-desktop"> Санкт-Петербург
+          <br class="adress-container__title-transfer-tablet-desktop"> Санкт-Петербург
         </p>
       </div>
       <div class="adress-location-image-container"><span class="visually-hidden">Фоновое фото локации</span></div>

@@ -26,10 +26,7 @@
 }
 
 @media (max-width: @mobile-width) {
-  .nav__container {
-    position: absolute;
-    top: 62px;
-    z-index: 2;
+  .nav {
     background-color: #ffffff;
     width: 320px;
   }
@@ -60,6 +57,12 @@
     height: 2px;
     background-color: #000000;
     box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+
+  .nav--position-absolute {
+    position: absolute;
+    top: 62px;
+    z-index: 2;
   }
 
   .nav--opened .nav__toggle {
@@ -115,7 +118,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .nav__container {
+  .nav {
     width: 440px;
   }
 
@@ -173,7 +176,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .nav__container {
+  .nav {
     width: 483px;
   }
 
